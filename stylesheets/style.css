@@ -1,0 +1,16 @@
+:root {
+  --blue: #2596be;
+  --black: #232721;
+  --gray: #969594;
+  --white: #fefefe;
+}
+
+body {
+  font-family: "Roboto";
+
+  & h1,
+  h2,
+  h3 {
+    font-family: "Playfair Display";
+  }
+}
