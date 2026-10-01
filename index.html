@@ -16,5 +16,58 @@
     />
   </head>
 
-  <body></body>
+  <body>
+    <header>
+      <div class="content-wrapper">
+        <div class="cover-photo">
+          <h1>Brandon Fitzpatrick</h1>
+          <picture>
+            <source
+              srcset="
+                ./photos/regular-size/me/me-300w.jpg   300w,
+                ./photos/regular-size/me/me-600w.jpg   600w,
+                ./photos/regular-size/me/me-1200w.jpg 1200w,
+                ./photos/regular-size/me/me-2000w.jpg 2000w
+              "
+              sizes="30vw"
+            />
+
+            <img src="./photos/regular-size/me/me-300w.jpg" alt="" />
+          </picture>
+        </div>
+
+        <section class="about-me">
+          <h2>About me</h2>
+
+          <p>
+            I'm a software developer who has been programming for the past four
+            years and counting. Alongside working to acquire my B.S. in Computer
+            Science, I have been actively pursuing web development through The
+            Odin Project - an open source, full-stack development curriculum, in
+            which I have built various websites from the ground up. Throughout
+            all of my pursuits, I've gained experience with a variety of
+            different programming languages, coding methodologies, and
+            fundamental programming concepts.
+          </p>
+
+          <ul class="links" role="list">
+            <li>
+              <a
+                class="github"
+                href="https://github.com/BrandonFitzpatricc"
+                aria-label="my github account"
+              ></a>
+            </li>
+            <li>
+              <a
+                class="linkedin"
+                href="https://www.linkedin.com/in/bfitzp03"
+                aria-label="my linkedin account"
+              ></a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </header>
+  </body>
 </html>
