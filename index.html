@@ -17,9 +17,11 @@
   </head>
 
   <body>
-    <header>
-      <div class="content-wrapper">
-        <div class="cover-photo">
+    <main>
+      <div class="introduction">
+        <div class="background-shape"></div>
+
+        <header>
           <h1>Brandon Fitzpatrick</h1>
           <picture>
             <source
@@ -32,13 +34,9 @@
               sizes="40vw"
             />
 
-            <img
-              src="./photos/regular-size/me-300w.jpg"
-              alt=""
-              loading="lazy"
-            />
+            <img src="./photos/regular-size/me-300w.jpg" alt="" />
           </picture>
-        </div>
+        </header>
 
         <section class="about-me">
           <h2>About me</h2>
@@ -72,260 +70,255 @@
           </ul>
         </section>
       </div>
-    </header>
 
-    <main>
       <section class="my-work">
-        <h2>My work</h2>
-        <div class="projects">
-          <div class="project">
-            <img
-              alt=""
-              loading="lazy"
-              srcset="
-                ./screenshots/battleship-300w.jpg   300w,
-                ./screenshots/battleship-600w.jpg   600w,
-                ./screenshots/battleship-1200w.jpg 1200w,
-                ./screenshots/battleship-2000w.jpg 2000w
-              "
-              sizes="30vw"
-            />
+        <div class="content">
+          <h2>My work</h2>
+          <div class="projects">
+            <div class="project">
+              <img
+                alt=""
+                srcset="
+                  ./screenshots/battleship-300w.jpg   300w,
+                  ./screenshots/battleship-600w.jpg   600w,
+                  ./screenshots/battleship-1200w.jpg 1200w,
+                  ./screenshots/battleship-2000w.jpg 2000w
+                "
+                sizes="30vw"
+              />
 
-            <section class="about-project">
-              <h3>Battleship</h3>
-              <p>
-                This is a web application that provides an interface for users
-                to play games of Battleship, with support for either one player
-                games against a bot, or two player games where the device is
-                passed between players. It features extensive drag and drop
-                functionality, and an advanced bot player algorithm that uses
-                probability to attack positions that are statistically the most
-                likely to have a ship.
-              </p>
-              <ul class="links" role="list">
-                <li>
-                  <a
-                    class="github"
-                    href="https://github.com/BrandonFitzpatricc/battleship"
-                    aria-label="project repository on github"
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    class="preview"
-                    href="https://brandonfitzpatricc.github.io/battleship/"
-                    aria-label="live preview of the project"
-                  ></a>
-                </li>
-              </ul>
-            </section>
-          </div>
+              <section class="about-project">
+                <h3>Battleship</h3>
+                <p>
+                  This is a web application that provides an interface for users
+                  to play games of Battleship, with support for either one
+                  player games against a bot, or two player games where the
+                  device is passed between players. It features extensive drag
+                  and drop functionality, and an advanced bot player algorithm
+                  that uses probability to attack positions that are
+                  statistically the most likely to have a ship.
+                </p>
+                <ul class="links" role="list">
+                  <li>
+                    <a
+                      class="github"
+                      href="https://github.com/BrandonFitzpatricc/battleship"
+                      aria-label="project repository on github"
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      class="preview"
+                      href="https://brandonfitzpatricc.github.io/battleship/"
+                      aria-label="live preview of the project"
+                    ></a>
+                  </li>
+                </ul>
+              </section>
+            </div>
 
-          <div class="project">
-            <img
-              alt=""
-              loading="lazy"
-              srcset="
-                ./screenshots/weather-app-300w.jpg   300w,
-                ./screenshots/weather-app-600w.jpg   600w,
-                ./screenshots/weather-app-1200w.jpg 1200w,
-                ./screenshots/weather-app-2000w.jpg 2000w
-              "
-              sizes="30vw"
-            />
+            <div class="project">
+              <img
+                alt=""
+                srcset="
+                  ./screenshots/weather-app-300w.jpg   300w,
+                  ./screenshots/weather-app-600w.jpg   600w,
+                  ./screenshots/weather-app-1200w.jpg 1200w,
+                  ./screenshots/weather-app-2000w.jpg 2000w
+                "
+                sizes="30vw"
+              />
 
-            <section class="about-project">
-              <h3>Weather App</h3>
-              <p>
-                This is a web application that utilizes a combination of
-                requests from various APIs to serve formatted weather
-                information to the user, for either their current location or a
-                location of their choice. It utilizes the Visual Crossing
-                Weather API for obtaining weather information, the Geolocation
-                Web API for obtaining user coordinates, and the TomTom Maps API
-                for parsing coordinates into a city and state.
-              </p>
-              <ul class="links" role="list">
-                <li>
-                  <a
-                    class="github"
-                    href="https://github.com/BrandonFitzpatricc/weather-app"
-                    aria-label="project repository on github"
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    class="preview"
-                    href="https://brandonfitzpatricc.github.io/weather-app/"
-                    aria-label="live preview of the project"
-                  ></a>
-                </li>
-              </ul>
-            </section>
-          </div>
+              <section class="about-project">
+                <h3>Weather App</h3>
+                <p>
+                  This is a web application that utilizes a combination of
+                  requests from various APIs to serve formatted weather
+                  information to the user, for either their current location or
+                  a location of their choice. It utilizes the Visual Crossing
+                  Weather API for obtaining weather information, the Geolocation
+                  Web API for obtaining user coordinates, and the TomTom Maps
+                  API for parsing coordinates into a city and state.
+                </p>
+                <ul class="links" role="list">
+                  <li>
+                    <a
+                      class="github"
+                      href="https://github.com/BrandonFitzpatricc/weather-app"
+                      aria-label="project repository on github"
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      class="preview"
+                      href="https://brandonfitzpatricc.github.io/weather-app/"
+                      aria-label="live preview of the project"
+                    ></a>
+                  </li>
+                </ul>
+              </section>
+            </div>
 
-          <div class="project">
-            <img
-              alt=""
-              loading="lazy"
-              srcset="
-                ./screenshots/todo-list-300w.jpg   300w,
-                ./screenshots/todo-list-600w.jpg   600w,
-                ./screenshots/todo-list-1200w.jpg 1200w,
-                ./screenshots/todo-list-2000w.jpg 2000w
-              "
-              sizes="30vw"
-            />
+            <div class="project">
+              <img
+                alt=""
+                srcset="
+                  ./screenshots/todo-list-300w.jpg   300w,
+                  ./screenshots/todo-list-600w.jpg   600w,
+                  ./screenshots/todo-list-1200w.jpg 1200w,
+                  ./screenshots/todo-list-2000w.jpg 2000w
+                "
+                sizes="30vw"
+              />
 
-            <section class="about-project">
-              <h3>Todo List</h3>
-              <p>
-                This is a todo list web application that provides an interface
-                similar in structure to a file explorer, where users have the
-                ability to create and save an organized system of projects
-                containing checklists of tasks sorted by date. It utilizes
-                advanced DOM manipulation techniques to enhance user experience
-                by ensuring that this interface is simple to navigate and
-                understand.
-              </p>
-              <ul class="links" role="list">
-                <li>
-                  <a
-                    class="github"
-                    href="https://github.com/BrandonFitzpatricc/todo-list"
-                    aria-label="project repository on github"
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    class="preview"
-                    href="https://brandonfitzpatricc.github.io/todo-list/"
-                    aria-label="live preview of the project"
-                  ></a>
-                </li>
-              </ul>
-            </section>
-          </div>
+              <section class="about-project">
+                <h3>Todo List</h3>
+                <p>
+                  This is a todo list web application that provides an interface
+                  similar in structure to a file explorer, where users have the
+                  ability to create and save an organized system of projects
+                  containing checklists of tasks sorted by date. It utilizes
+                  advanced DOM manipulation techniques to enhance user
+                  experience by ensuring that this interface is simple to
+                  navigate and understand.
+                </p>
+                <ul class="links" role="list">
+                  <li>
+                    <a
+                      class="github"
+                      href="https://github.com/BrandonFitzpatricc/todo-list"
+                      aria-label="project repository on github"
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      class="preview"
+                      href="https://brandonfitzpatricc.github.io/todo-list/"
+                      aria-label="live preview of the project"
+                    ></a>
+                  </li>
+                </ul>
+              </section>
+            </div>
 
-          <div class="project">
-            <img
-              alt=""
-              loading="lazy"
-              srcset="
-                ./screenshots/restaurant-page-300w.jpg   300w,
-                ./screenshots/restaurant-page-600w.jpg   600w,
-                ./screenshots/restaurant-page-1200w.jpg 1200w,
-                ./screenshots/restaurant-page-2000w.jpg 2000w
-              "
-              sizes="30vw"
-            />
+            <div class="project">
+              <img
+                alt=""
+                srcset="
+                  ./screenshots/restaurant-page-300w.jpg   300w,
+                  ./screenshots/restaurant-page-600w.jpg   600w,
+                  ./screenshots/restaurant-page-1200w.jpg 1200w,
+                  ./screenshots/restaurant-page-2000w.jpg 2000w
+                "
+                sizes="30vw"
+              />
 
-            <section class="about-project">
-              <h3>Restaurant Page</h3>
-              <p>
-                This is a mock restaurant website that was created primarily
-                using JavaScript to dynamically generate its content through the
-                DOM. It contains several pages, all of which are loaded through
-                functions provided by ES6 modules, and bundled together with an
-                HTML template and CSS stylesheets through the use of Webpack.
-              </p>
-              <ul class="links" role="list">
-                <li>
-                  <a
-                    class="github"
-                    href="https://github.com/BrandonFitzpatricc/restaurant-page"
-                    aria-label="project repository on github"
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    class="preview"
-                    href="https://brandonfitzpatricc.github.io/restaurant-page/"
-                    aria-label="live preview of the project"
-                  ></a>
-                </li>
-              </ul>
-            </section>
-          </div>
+              <section class="about-project">
+                <h3>Restaurant Page</h3>
+                <p>
+                  This is a mock restaurant website that was created primarily
+                  using JavaScript to dynamically generate its content through
+                  the DOM. It contains several pages, all of which are loaded
+                  through functions provided by ES6 modules, and bundled
+                  together with an HTML template and CSS stylesheets through the
+                  use of Webpack.
+                </p>
+                <ul class="links" role="list">
+                  <li>
+                    <a
+                      class="github"
+                      href="https://github.com/BrandonFitzpatricc/restaurant-page"
+                      aria-label="project repository on github"
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      class="preview"
+                      href="https://brandonfitzpatricc.github.io/restaurant-page/"
+                      aria-label="live preview of the project"
+                    ></a>
+                  </li>
+                </ul>
+              </section>
+            </div>
 
-          <div class="project">
-            <img
-              alt=""
-              loading="lazy"
-              srcset="
-                ./screenshots/tic-tac-toe-300w.jpg   300w,
-                ./screenshots/tic-tac-toe-600w.jpg   600w,
-                ./screenshots/tic-tac-toe-1200w.jpg 1200w,
-                ./screenshots/tic-tac-toe-2000w.jpg 2000w
-              "
-              sizes="30vw"
-            />
+            <div class="project">
+              <img
+                alt=""
+                srcset="
+                  ./screenshots/tic-tac-toe-300w.jpg   300w,
+                  ./screenshots/tic-tac-toe-600w.jpg   600w,
+                  ./screenshots/tic-tac-toe-1200w.jpg 1200w,
+                  ./screenshots/tic-tac-toe-2000w.jpg 2000w
+                "
+                sizes="30vw"
+              />
 
-            <section class="about-project">
-              <h3>Tic Tac Toe</h3>
-              <p>
-                This is an interactive webpage that was created using HTML, CSS
-                and JavaScript, utilizing advanced OOP techniques. It allows two
-                players to set their names, and play endless rounds of
-                tic-tac-toe with each other.
-              </p>
-              <ul class="links" role="list">
-                <li>
-                  <a
-                    class="github"
-                    href="https://github.com/BrandonFitzpatricc/tic-tac-toe"
-                    aria-label="project repository on github"
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    class="preview"
-                    href="https://brandonfitzpatricc.github.io/tic-tac-toe/"
-                    aria-label="live preview of the project"
-                  ></a>
-                </li>
-              </ul>
-            </section>
-          </div>
+              <section class="about-project">
+                <h3>Tic Tac Toe</h3>
+                <p>
+                  This is an interactive webpage that was created using HTML,
+                  CSS and JavaScript, utilizing advanced OOP techniques. It
+                  allows two players to set their names, and play endless rounds
+                  of tic-tac-toe with each other.
+                </p>
+                <ul class="links" role="list">
+                  <li>
+                    <a
+                      class="github"
+                      href="https://github.com/BrandonFitzpatricc/tic-tac-toe"
+                      aria-label="project repository on github"
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      class="preview"
+                      href="https://brandonfitzpatricc.github.io/tic-tac-toe/"
+                      aria-label="live preview of the project"
+                    ></a>
+                  </li>
+                </ul>
+              </section>
+            </div>
 
-          <div class="project">
-            <img
-              alt=""
-              loading="lazy"
-              srcset="
-                ./screenshots/library-300w.jpg   300w,
-                ./screenshots/library-600w.jpg   600w,
-                ./screenshots/library-1200w.jpg 1200w,
-                ./screenshots/library-2000w.jpg 2000w
-              "
-              sizes="30vw"
-            />
+            <div class="project">
+              <img
+                alt=""
+                srcset="
+                  ./screenshots/library-300w.jpg   300w,
+                  ./screenshots/library-600w.jpg   600w,
+                  ./screenshots/library-1200w.jpg 1200w,
+                  ./screenshots/library-2000w.jpg 2000w
+                "
+                sizes="30vw"
+              />
 
-            <section class="about-project">
-              <h3>Library</h3>
-              <p>
-                This is an interactive webpage that was created using HTML, CSS,
-                and JavaScript. It provides a responsive interface created via
-                CSS Grid and DOM manipulation to display, create, remove, and
-                modify the read status of books.
-              </p>
-              <ul class="links" role="list">
-                <li>
-                  <a
-                    class="github"
-                    href="https://github.com/BrandonFitzpatricc/library"
-                    aria-label="project repository on github"
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    class="preview"
-                    href="https://brandonfitzpatricc.github.io/library"
-                    aria-label="live preview of the project"
-                  ></a>
-                </li>
-              </ul>
-            </section>
+              <section class="about-project">
+                <h3>Library</h3>
+                <p>
+                  This is an interactive webpage that was created using HTML,
+                  CSS, and JavaScript. It provides a responsive interface
+                  created via CSS Grid and DOM manipulation to display, create,
+                  remove, and modify the read status of books.
+                </p>
+                <ul class="links" role="list">
+                  <li>
+                    <a
+                      class="github"
+                      href="https://github.com/BrandonFitzpatricc/library"
+                      aria-label="project repository on github"
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      class="preview"
+                      href="https://brandonfitzpatricc.github.io/library"
+                      aria-label="live preview of the project"
+                    ></a>
+                  </li>
+                </ul>
+              </section>
+            </div>
           </div>
         </div>
       </section>
