@@ -174,5 +174,72 @@ body {
         }
       }
     }
+
+    & .contact-me {
+      background-color: var(--blue);
+      padding: 40px 75px;
+      display: flex;
+      justify-content: center;
+
+      & .content {
+        max-width: 850px;
+        flex: 1;
+
+        & * {
+          color: white;
+        }
+
+        & h2 {
+          margin-bottom: 15px;
+        }
+
+        & p {
+          width: 80%;
+        }
+
+        & > a {
+          text-decoration: none;
+          display: flex;
+          gap: 15px;
+
+          &[href*="tel"]::before {
+            content: url(../icons/phone.svg);
+            display: block;
+            width: 25px;
+            height: 25px;
+            filter: invert(96%) sepia(4%) saturate(16%) hue-rotate(168deg)
+              brightness(104%) contrast(107%);
+            margin-bottom: 10px;
+          }
+
+          &[href*="mailto"]::before {
+            content: url(../icons/email.svg);
+            display: block;
+            width: 25px;
+            height: 25px;
+            filter: invert(96%) sepia(4%) saturate(16%) hue-rotate(168deg)
+              brightness(104%) contrast(107%);
+          }
+        }
+
+        & .links {
+          margin-top: 25px;
+          filter: invert(96%) sepia(4%) saturate(16%) hue-rotate(168deg)
+            brightness(104%) contrast(107%);
+
+          & a {
+            width: 35px;
+            height: 35px;
+          }
+        }
+      }
+
+      & img {
+        display: block;
+        min-width: 700px;
+        width: 45vw;
+        max-width: 750px;
+      }
+    }
   }
 }
