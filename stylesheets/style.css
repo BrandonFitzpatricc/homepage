@@ -4,16 +4,20 @@
   --gray: rgb(85, 85, 85);
   --white: rgb(254, 254, 254);
 
-  --box-shadow-color: rgba(0, 0, 0, 0.15);
+  --box-shadow-color: #00000026;
   --box-shadow: 2px 2px 5px 5px var(--box-shadow-color);
 
   --drop-shadow-color: rgba(0, 0, 0, 0.4);
+
+  --system-font-stack:
+    system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 h1,
 h2,
 h3 {
-  font-family: "Playfair Display";
+  font-family: "Playfair Display", "Times New Roman";
   color: var(--black);
   font-weight: 500;
 }
@@ -44,7 +48,7 @@ h2 {
 }
 
 body {
-  font-family: "Roboto";
+  font-family: "Roboto", var(--system-font-stack);
   color: var(--gray);
 
   & main {
