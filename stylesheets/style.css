@@ -84,6 +84,7 @@ body {
           text-shadow: 2px 2px 4px var(--gray);
           position: absolute;
           bottom: 2px;
+          text-align: center;
         }
 
         & img {
@@ -239,7 +240,7 @@ body {
   }
 }
 
-@media (max-width: 1341px) {
+@media (min-width: 768px) and (max-width: 1341px) {
   body {
     & main {
       & .introduction {
@@ -290,6 +291,77 @@ body {
 
         & img {
           width: 400px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    & .links {
+      justify-content: center !important;
+    }
+
+    & h2 {
+      text-align: center;
+    }
+
+    & main {
+      & .introduction {
+        min-width: 100%;
+        padding: 25px;
+        flex-direction: column;
+
+        & .background-shape {
+          &::before {
+            height: 90vw;
+          }
+        }
+
+        & header {
+          & img {
+            min-width: 275px;
+            width: 80vw;
+            max-width: 725px;
+          }
+        }
+
+        & .about-me {
+          box-shadow: none;
+          height: auto;
+          padding: 40px 0;
+
+          & h2 {
+            margin-bottom: 10px;
+          }
+
+          & .links {
+            width: 100%;
+            right: 0;
+          }
+        }
+      }
+
+      & .my-work {
+        padding: 25px;
+
+        & .content {
+          & .projects {
+            grid-template-columns: 1fr;
+          }
+        }
+      }
+
+      & .contact-me {
+        padding: 25px;
+        flex-direction: column;
+        align-items: center;
+
+        & img {
+          min-width: 270px;
+          width: 80vw;
+          max-width: 717px;
         }
       }
     }

@@ -26,6 +26,18 @@
           <picture>
             <source
               srcset="
+                ./photos/cropped-size/me-cropped-300w.jpg   300w,
+                ./photos/cropped-size/me-cropped-600w.jpg   600w,
+                ./photos/cropped-size/me-cropped-1200w.jpg 1200w,
+                ./photos/cropped-size/me-cropped-2000w.jpg 2000w
+              "
+              media="(width < 768px)"
+              sizes="90vw"
+              ;
+            />
+
+            <source
+              srcset="
                 ./photos/regular-size/me-300w.jpg   300w,
                 ./photos/regular-size/me-600w.jpg   600w,
                 ./photos/regular-size/me-1200w.jpg 1200w,
@@ -373,7 +385,7 @@
               ./photos/cropped-size/workspace-cropped-2000w.jpg 2000w
             "
             sizes="25vw"
-            media="(max-width:1341px)"
+            media="(width <= 1341px)"
           />
 
           <source
