@@ -4,7 +4,7 @@
 ![CSS](https://img.shields.io/badge/CSS-563d7c?&style=for-the-badge)
 ![Figma](https://img.shields.io/badge/Figma-7e65ee?&style=for-the-badge)
 
-This is an accessible and responsive portfolio webpage that serves to showcase information about myself and my work.
+This is an accessible and responsive portfolio webpage that serves to showcase information about myself and the work that I've done.
 
 ## Features
 - Three different page layouts corresponding to screen sizes varying from desktop monitors, laptop screens, tablets, and smartphones
